@@ -5,13 +5,15 @@ import Img from 'gatsby-image'
 class About extends React.Component {
     render() {
         return (
-            <section style={{width:`calc(100vw - (100vw - 100%))`, height:`100vh`}}>
-                <h2 style={{position:`relative`, top:40, textAlign:`center`, fontWeight:300, color:`#fa7268`, fontSize:40}}>About Me</h2>
-                <div className="container" style={{marginTop:130}}>
+            <section style={{width:`calc(100vw - (100vw - 100%))`,minHeight:`100vh`,}}>
+                <div className="container">
+                    <div className="row">
+                        <h2 style={{height:100, display:`flex`, justifyContent:`center`, alignItems:`center`,textAlign:`center`, fontWeight:300, color:`#fa7268`, fontSize:40}}>About Me</h2>
+                    </div>
                     <div className="row">
                         <Fade left>
-                            <div className="col s12 m12 l6">
-                                <Img fluid={this.props.fluid} style={{borderRadius:`50%`, boxShadow:`0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)`, marginBottom:30, maxWidth:`400px`}} alt="Hannah Lee" title="Hyeonjeong Lee"/>
+                            <div className="col s12 m6 l6" style={{display:`flex`, justifyContent:`center`, alignItems:`center`}}>
+                                <Img fluid={this.props.fluid} style={{borderRadius:`50%`, boxShadow:`0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)`, marginBottom:30, maxWidth:`300px`}} alt="Hannah Lee" title="Hyeonjeong Lee"/>
                             </div>
                         </Fade>
                         <Fade right>
